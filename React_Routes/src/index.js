@@ -15,7 +15,7 @@ const Root = () =>{
   return(
   <BrowserRouter>
     <div>
-      <Route exact path="/" component={Home} />
+      <Home />
       <Route path="/Guilty" component={Guilty} />
       <Route path="/Happy" component={Happy} />
       <Route path="/Sleepy" component={Sleepy} />
@@ -27,22 +27,22 @@ const Root = () =>{
 class Home extends Component{
   render(){
     return(
-      <div>
+      <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/Guilty">Guilty</Link>
+            <Link to="/Guilty" >Guilty</Link>
           </li>
           <li>
-            <Link to="/Happy">Happy</Link>
+            <Link to="/Happy" >Happy</Link>
           </li>
           <li>
-            <Link to="/Sleepy">Sleepy</Link>
+            <Link to="/Sleepy" >Sleepy</Link>
           </li>
         </ul>
-    </div>
+    </nav>
       // your code goes here
     )
   }
